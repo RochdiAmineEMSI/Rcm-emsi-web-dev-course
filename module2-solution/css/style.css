@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container {
+    min-width: 30%;
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-top: 0;
+    border: 2px solid black;
+    background-color: #999999;
+    color: black;
+    font-weight: 600;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    justify-content: space-between;
+}
+
+.container .tit {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    text-align: end;
+    padding: 10px;
+    border: 1px solid black;
+    width: 160px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.container .Chicken h2 {
+    background-color: #d59898;
+}
+
+.container p {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.container .beef h2 {
+    background-color: #c14543;
+    color: #fff;
+}
+
+.container .sushi h2 {
+    background-color:#e5d198;
+}
+
+@media (max-width: 767px) {
+    .parent {
+        flex-direction: column;
+    }
+
+    .parent .container {
+        width: 70%;
+        padding-bottom: 20px;
+    }
+
+    .parent .container p {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 45%;
+    }
+
+    .parent .last {
+        width: 95%;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 30%;
+    }
+}
